@@ -40,6 +40,19 @@ void destruct() {
 
 void kill() {
 	printLogo();
+	cout << "Kill Franklin? (Y/n) ";
+	char res;
+	cin >> res;
+	if (res=='y' || res=='Y') {
+		cout << "Locating Franklin...\n";
+		wait(1000);
+		cout << "Located! Launching missile...\n";
+		wait(1000);
+		cout << "Launched!\n";
+	} else {
+		cout << "See you later!\n";
+		mainMenu();
+	}
 	cin.get();
 }
 
